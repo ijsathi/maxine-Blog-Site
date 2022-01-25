@@ -1,0 +1,72 @@
+.blog-all{
+    font-family: var(--font-body),ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.blog{
+    border-radius: 15px;
+    background: #fff;
+}
+.blog:hover{
+    box-shadow: 2px 2px 4px #cfd2d6;
+    background: #f9fafb;
+}
+.own-part-img img{
+    border-radius: 50%;
+    width: 31px;
+}
+.blog-img{
+    border-radius: 15px 15px 0 0;
+}
+.title{
+    font-size: 17px;
+}
+.blog-desc{
+    font-size: 14px;
+}
+.own-name{
+    font-size: 13px;
+    font-weight: 600;
+}
+.own-date{
+    font-size: 13px;
+    font-weight: 500;
+}
+.own-part{
+    display: flex;
+}
+.more-btn{
+    border: none;
+    text-decoration: none;
+}
+.react{
+    border-radius: 9999px;
+    background: #fff1f2;
+    height: 2rem;
+    width: 85px;
+    text-align: center;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+.react:hover{
+    cursor: pointer;
+}
+.comment{
+    border-radius: 9999px;
+    background: #f9fafb;
+    height: 2rem;
+    width: 75px;
+    text-align: center;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+.comment:hover{
+    background-color: #EFFCF6;
+    color: #0C6B58;
+    cursor: pointer;
+}
+.bookmark{
+    padding-left: 100px;
+}
+.b:hover{ 
+    cursor: pointer;
+    color: #485466;
+}
