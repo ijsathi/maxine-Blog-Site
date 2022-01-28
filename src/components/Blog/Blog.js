@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Blog.css';
 
 const Blog = () => {
@@ -10,7 +11,7 @@ const Blog = () => {
             .then(data => setBlog(data))
     }, [])
     return (
-        <div className='blog-all'>
+        <div id='blog' className='blog-all'>
             <Row xs={1} md={4} className="g-4 w-100 ps-4">
                 {
                     blog.map(data =>
@@ -31,17 +32,20 @@ const Blog = () => {
                                     </div>
                                     <Card.Title className="fw-bold title">{data.blog_title}...</Card.Title>
                                     <Card.Text className='blog-desc'>
-                                        {data.description_1}<button className='more-btn'> more...</button>
+                                        {data.description_1}
+                                        <Link to={`/details/${data._id}`}>
+                                            <button className='b-btn'>more...</button>
+                                        </Link>
                                     </Card.Text>
                                     <div className="own-part">
-                                        <div style={{color:"#e11d48"}} className="react d-flex p-1">
-                                            <span><i class="fas fa-heart"></i></span> <p style={{paddingLeft:"5px", fontSize:"14px"}}>{data.total_react}</p>
+                                        <div style={{ color: "#e11d48" }} className="react d-flex p-1">
+                                            <span><i class="fas fa-heart"></i></span> <p style={{ paddingLeft: "5px", fontSize: "14px" }}>{data.total_react}</p>
                                         </div>
                                         <div className="comment p-1 d-flex ms-4 text-center">
-                                            <span><i class="far fa-comment-dots"></i></span> <p style={{paddingLeft:"5px", fontSize:"14px"}}>{data.total_comment}</p>
+                                            <span><i class="far fa-comment-dots"></i></span> <p style={{ paddingLeft: "5px", fontSize: "14px" }}>{data.total_comment}</p>
                                         </div>
                                         <div className="bookmark">
-                                            <span className='b'><i class="fas fa-bookmark"></i></span>
+                                            <span className='bmk'><i class="fas fa-bookmark"></i></span>
                                         </div>
                                     </div>
                                 </Card.Body>

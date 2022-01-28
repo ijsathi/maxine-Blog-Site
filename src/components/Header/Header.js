@@ -13,7 +13,6 @@ const Header = () => {
             <Nav className="ms-auto">
               <Nav.Link href="#home">Home</Nav.Link>
               <Nav.Link href="#about">About</Nav.Link>
-              <Nav.Link href="#service">Service</Nav.Link>
               <Nav.Link href="#blog">Blog</Nav.Link>
               <Nav.Link href="#contact">Contact Us</Nav.Link>
             </Nav>
