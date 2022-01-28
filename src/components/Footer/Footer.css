@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.footer-area{
+    margin-top: 100px;
+    padding: 20px 0;
+    background-color: #F5F5F5;
+    color:#666;
+    height: 120%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    font-family: 'Raleway';
+}
+
+.footer-area p{
+    font-size: 99% !important;
+}
+@media only screen and (max-width:600px){
+
+}
