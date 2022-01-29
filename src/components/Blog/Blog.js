@@ -5,17 +5,27 @@ import './Blog.css';
 
 const Blog = () => {
     const [blog, setBlog] = useState([]);
+    const [pageCount, setPageCount] = useState(0);
+    const [page, setPage] = useState(0);
+    const size = 8;
+
     useEffect(() => {
-        fetch('http://localhost:5000/blog')
+        fetch(`http://localhost:5000/blog?page=${page}&&size=${size}`)
             .then(result => result.json())
-            .then(data => setBlog(data))
-    }, [])
+            .then(data => {
+                setBlog(data.blog);
+                const count = data.count;
+                const pageNumber = Math.ceil(count/size);
+                setPageCount(pageNumber);
+            });
+
+    }, [page])
     return (
         <div id='blog' className='blog-all'>
             <Row xs={1} md={4} className="g-4 w-100 ps-4">
                 {
                     blog.map(data =>
-                        <Col>
+                        <Col key={data.id}>
                             <Card className="blog h-100">
                                 <Card.Img variant="top" className="w-100 h-75 blog-img" src={data.blog_img} />
                                 <Card.Body>
@@ -54,6 +64,15 @@ const Blog = () => {
                     )
                 }
             </Row>
+             
+            <div className="pagination">
+                {
+                    [...Array(pageCount).keys()].map(number => <button
+                    className={number === page ? "selected" : ""}
+                    key={number} onClick={() => setPage(number)}
+                    >{number} </button>)
+                }
+                </div>
         </div>
     );
 

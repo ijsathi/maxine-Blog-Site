@@ -76,3 +76,7 @@
     font-weight: bold;
     background: none;
 }
+.pagination .selected{
+    background-color: indigo;
+    color: ivory;
+}
