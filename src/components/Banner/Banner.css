@@ -53,7 +53,7 @@
     font-weight: bold;
 }
 .p:before{
-    content: attr(REFL-TEXT);
+    content: attr(refl-text);
     position: absolute;
     transform: rotateX(180deg);
     line-height: 52px;

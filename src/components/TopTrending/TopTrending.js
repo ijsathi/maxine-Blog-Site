@@ -22,7 +22,7 @@ const TopTrending = () => {
                 <Row xs={2} md={5} className="g-4 w-100 ps-4 pb-5">
                     {
                         top.map(t =>
-                            <Col>
+                            <Col key={t.key}>
                                 <Card className='t-card'>
                                     <div className="t-t pt-3">
                                         <p>{t.id}</p>

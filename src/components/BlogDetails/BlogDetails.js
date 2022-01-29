@@ -48,13 +48,13 @@ const BlogDetails = () => {
                                     </div>
                                     <div className="d-reaction">
                                         <div className="d-bookmark">
-                                            <p><span className='d-bmk-icon'><i class="far fa-bookmark"></i></span><span style={{ fontSize: "12px" }}>{details.bookmarks}</span></p>
+                                            <p><span className='d-bmk-icon'><i className="far fa-bookmark"></i></span><span style={{ fontSize: "12px" }}>{details.bookmarks}</span></p>
                                         </div>
                                         <div className="d-comment">
-                                            <p>{details.total_comment}<span className='d-cmnt-icon'><i class="far fa-comment-dots"></i></span></p>
+                                            <p>{details.total_comment}<span className='d-cmnt-icon'><i className="far fa-comment-dots"></i></span></p>
                                         </div>
                                         <div className="d-react">
-                                            <p>{details.total_react} <span className='d-rct-icon'><i class="fas fa-heart"></i></span></p>
+                                            <p>{details.total_react} <span className='d-rct-icon'><i className="fas fa-heart"></i></span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -90,7 +90,7 @@ const BlogDetails = () => {
                             <Container>
                                 <Row className="d-upper pt-4">
                                     <Col xs={12} md={8}>
-                                        <h5 className='d-discover fw-bold'> <span style={{ color: "gray" }}><i class="fas fa-tags"></i></span> Discover more tags</h5>
+                                        <h5 className='d-discover fw-bold'> <span style={{ color: "gray" }}><i className="fas fa-tags"></i></span> Discover more tags</h5>
                                     </Col>
                                     <Col xs={6} md={4}>
                                         <h6 className='d-view fw-bold'>View all</h6>

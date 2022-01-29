@@ -49,13 +49,13 @@ const Blog = () => {
                                     </Card.Text>
                                     <div className="own-part">
                                         <div style={{ color: "#e11d48" }} className="react d-flex p-1">
-                                            <span><i class="fas fa-heart"></i></span> <p style={{ paddingLeft: "5px", fontSize: "14px" }}>{data.total_react}</p>
+                                            <span><i className="fas fa-heart"></i></span> <p style={{ paddingLeft: "5px", fontSize: "14px" }}>{data.total_react}</p>
                                         </div>
                                         <div className="comment p-1 d-flex ms-4 text-center">
-                                            <span><i class="far fa-comment-dots"></i></span> <p style={{ paddingLeft: "5px", fontSize: "14px" }}>{data.total_comment}</p>
+                                            <span><i className="far fa-comment-dots"></i></span> <p style={{ paddingLeft: "5px", fontSize: "14px" }}>{data.total_comment}</p>
                                         </div>
                                         <div className="bookmark">
-                                            <span className='bmk'><i class="fas fa-bookmark"></i></span>
+                                            <span className='bmk'><i className="fas fa-bookmark"></i></span>
                                         </div>
                                     </div>
                                 </Card.Body>

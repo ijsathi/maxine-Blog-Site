@@ -23,15 +23,15 @@ const Footer = () => {
                             <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor adipiscing elit.</small>
                         </p>
                         <p className=''>
-                            <span className='me-2'><i class="fas fa-map-marker-alt"></i></span>
+                            <span className='me-2'><i className="fas fa-map-marker-alt"></i></span>
                             324 Madison Street,39535 London, UK
                         </p>
                         <p>
-                            <span className='me-2'><i class="fas fa-phone-alt"></i></span>
+                            <span className='me-2'><i className="fas fa-phone-alt"></i></span>
                             <span className="fw-bold">Phone:</span> +00 123 456 7890
                         </p>
                         <p>
-                            <span className='me-2'><i class="far fa-envelope"></i></span>
+                            <span className='me-2'><i className="far fa-envelope"></i></span>
                             <span className="fw-bold">Email:</span> contact@example.com
                         </p>
                     </Col>

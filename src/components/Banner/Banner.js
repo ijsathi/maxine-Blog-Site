@@ -11,7 +11,7 @@ const Banner = () => {
       <div className="overlay">
         <div className="content">
           <h1 className='garden'>maxine</h1>
-          <p REFL-TEXT="OUR ARTICLES" className='p'>OUR ARTICLES</p>
+          <p refl-text="OUR ARTICLES" className='p'>OUR ARTICLES</p>
         </div>
       </div>
     </div>
