@@ -15,7 +15,7 @@ const Blog = () => {
             .then(data => {
                 setBlog(data.blog);
                 const count = data.count;
-                const pageNumber = Math.ceil(count/size);
+                const pageNumber = Math.ceil(count / size);
                 setPageCount(pageNumber);
             });
 
@@ -64,15 +64,15 @@ const Blog = () => {
                     )
                 }
             </Row>
-             
+
             <div className="pagination">
                 {
                     [...Array(pageCount).keys()].map(number => <button
-                    className={number === page ? "selected" : ""}
-                    key={number} onClick={() => setPage(number)}
+                        className={number === page ? "selected" : ""}
+                        key={number} onClick={() => setPage(number)}
                     >{number} </button>)
                 }
-                </div>
+            </div>
         </div>
     );
 

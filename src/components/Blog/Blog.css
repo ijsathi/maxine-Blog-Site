@@ -77,6 +77,16 @@
     background: none;
 }
 .pagination .selected{
-    background-color: indigo;
-    color: ivory;
+    background-color: #fff1f2;
+    color: rgb(225, 29, 72);
+}
+.pagination{
+    padding-top: 40px;
+    padding-left: 30px;
+}
+.pagination button{
+    width: 50px;
+    height: 40px;
+    border-radius: 999px;
+    border: none;
 }
