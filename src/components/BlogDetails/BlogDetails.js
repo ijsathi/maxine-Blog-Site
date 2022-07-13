@@ -7,7 +7,7 @@ const BlogDetails = () => {
     const { id } = useParams();
     const [details, setDetails] = useState({});
     useEffect(() => {
-        fetch(`http://localhost:5000/blog/${id}`)
+        fetch(`https://quiet-retreat-54491.herokuapp.com/blog/${id}`)
             .then(res => res.json())
             .then(details => setDetails(details))
     }, [])

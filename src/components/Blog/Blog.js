@@ -10,7 +10,7 @@ const Blog = () => {
     const size = 8;
 
     useEffect(() => {
-        fetch(`http://localhost:5000/blog?page=${page}&&size=${size}`)
+        fetch(`https://quiet-retreat-54491.herokuapp.com/blog?page=${page}&&size=${size}`)
             .then(result => result.json())
             .then(data => {
                 setBlog(data.blog);
